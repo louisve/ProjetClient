@@ -1,0 +1,40 @@
+.footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   background-color: #fff2e9;
+   padding: 20px;
+   text-align: center;
+}
+ 
+.navbar{
+   background-color: #fff2e9;
+}
+
+.mail{
+   text-decoration: none;
+   color: black;
+}
+
+ .tel{
+   text-decoration: none;
+   color: black;
+}
+
+#login{
+   text-align: right;
+}
+
+#bloc1{
+   padding: auto;
+}
+
+#textArea1{
+   text-align: center;
+   
+}
+
+#images{
+   padding-left: 0;
+   margin-left: 0;
+}
