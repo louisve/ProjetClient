@@ -38,3 +38,14 @@
    padding-left: 0;
    margin-left: 0;
 }
+
+.first-line:hover + .second-line.d-none {
+   display: block !important;
+   font-weight: bold;
+ }
+ 
+
+ .first-line:hover {
+   font-weight: bold;
+ }
+ 
