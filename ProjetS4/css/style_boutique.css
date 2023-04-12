@@ -1,0 +1,45 @@
+.body{
+    background-image: url('../images/boutique.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.construction{
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+
+@media (max-width: 800px) {
+    
+    .construction{
+        font-size: x-large;
+        font-weight: bolder;
+        margin:0;
+    }
+
+    .h3{
+        font-size: medium;
+    }
+
+}
+
+@media (max-width: 500px) {
+    
+    .construction{
+        font-size: large;
+        font-weight: bolder;
+        margin:0;
+    }
+
+}
+
+@media (max-width: 460px) {
+    
+    .construction{
+        font-size:small;
+        font-weight: bolder;
+        margin:0;
+    }
+
+}

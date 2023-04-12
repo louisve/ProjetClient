@@ -42,10 +42,14 @@
 .first-line:hover + .second-line.d-none {
    display: block !important;
    font-weight: bold;
- }
- 
+}
 
- .first-line:hover {
+.second-line.d-none:hover {
+   display: block !important;
    font-weight: bold;
- }
+}
+
+.first-line {
+   font-weight: bold;
+}
  
