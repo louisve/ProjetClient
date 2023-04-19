@@ -35,8 +35,41 @@ function afficherNouvelElement(){
         document.getElementById('txttypeformation').style.display = 'none';
     }
     
-  }
+}
+
+function attacheLesEvenementDansLaPage(){
+
+    function verifFormulaire(){
+        let nom = document.querySelector("#nom").value;
+        let prenom = document.querySelector("#prenom").value;
+        let mail = document.querySelector("#mail").value;
+        let tel = document.querySelector("#tel").value;
+        let option = document.querySelector("#typedemande").value;
+
+        if (nom == ""){
+            document.querySelector("#nom").style.borderColor = "red";  
+        }
+        if (prenom ==  ""){
+            document.querySelector("#prenom").style.borderColor = "red";
+        }
+        if (mail ==  ""){
+            document.querySelector("#mail").style.borderColor = "red";
+
+        }
+        if (tel ==  ""){
+            document.querySelector("#tel").style.borderColor = "red";
+
+        }
+        if (option ==  ""){
+            document.querySelector("#typedemande").style.borderColor = "red";
+
+        }
+
+    }
+
+    let envoie = document.querySelector("#envoyer");
+    envoie.addEventListener("click", verifFormulaire);
   
-  
-  
-  
+}
+
+window.addEventListener("load", attacheLesEvenementDansLaPage);  
