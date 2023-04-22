@@ -11,6 +11,9 @@ function afficherNouvelElement(){
         document.getElementById('txtniveau').style.display = 'none';
         document.getElementById('txtmethodeformation').style.display = 'none';
         document.getElementById('txttypeformation').style.display = 'none';
+        document.getElementById('Bazai').style.display = 'none';
+        document.getElementById('Sanhe').style.display = 'none';
+        document.getElementById('Sanyuan').style.display = 'none';
     }
     else if(selection == "Analyse"){
         document.getElementById('txtquestion').style.display = 'none';
@@ -18,6 +21,9 @@ function afficherNouvelElement(){
         document.getElementById('txtniveau').style.display = 'none';
         document.getElementById('txtmethodeformation').style.display = 'none';
         document.getElementById('txttypeformation').style.display = 'none';
+        document.getElementById('Bazai').style.display = 'none';
+        document.getElementById('Sanhe').style.display = 'none';
+        document.getElementById('Sanyuan').style.display = 'none';
         
     }
     else if(selection == "Formation"){
@@ -26,6 +32,9 @@ function afficherNouvelElement(){
         document.getElementById('txtniveau').style.display = 'block';
         document.getElementById('txtmethodeformation').style.display = 'block';
         document.getElementById('txttypeformation').style.display = 'block';
+        document.getElementById('Bazai').style.display = 'block';
+        document.getElementById('Sanhe').style.display = 'block';
+        document.getElementById('Sanyuan').style.display = 'block';
     }
     else{
         document.getElementById('txtquestion').style.display = 'none';

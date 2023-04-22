@@ -7,7 +7,7 @@
       <meta name="author" content="Olivia Vittenet Clément Vincent Loïc Missigbeto Louis Vernanchet">
       <title>ACADEMY FENG SHUI</title>
         <!-- CSS -->
-        <link href="../css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet" />
         <link href="../fontawesome/css/all.css" rel="stylesheet">
         <link href="../css/style.css" rel="stylesheet"/>
         
@@ -57,7 +57,7 @@
                   
               <ul class="navbar-nav pull-right mb-2 mb-lg-0">
                 <li class="nav-item px-3">
-                  <a class="nav-link" href="login.html"><i class="fa-solid fa-user"></i>  Login</a>
+                  <a class="nav-link" href="login.html" style="color:  #DBAE00;"><i class="fa-solid fa-user"></i>  Login</a>
                 </li>
               </ul>
             </div>
@@ -66,36 +66,45 @@
         </div>
       </nav>
       <!-- FIN NAVBAR -->
-        
-      <!-- CORPS DE LA PAGE -->
-
-
-      <div class="container-fluid d-flex justify-content-center" style="margin-top: 20px;">
-        <div class="d-flex flex-column">
-            <div class="bd-highlight d-flex justify-content-center">
-                <h1>LOGIN</h1>
-            </div>
-            <div class="d-flex flex-row" style="margin:20px">
-              <input id="inputAjoutEmail" class="saisieInput" type="text" name="email" placeholder="email">
-            </div>
-
-            <div class="d-flex flex-row" style="margin:20px">
-              <input id="inputMdp" class="saisieInput" type="text" name="mdp" placeholder="Mot de passe">
-            </div>
-            
-            <div class="d-flex flex-row justify-content-center">
-                <button id="buttonAjoutTache" class="btn btn-primary" value="Ajouter">Se connecter</button>
-            </div>
-            <div class="d-flex  justify-content-center">
-                <div id="listeTaches" class="d-flex  flex-column">
+        <div class="container-fluid px-5 py-5">
+          <div class="container" style="border-style: solid; border-radius: 10px;background-color: white; border-color:rgb(138, 124, 112); width: 50%;">
+              <div class = "row" >
+                <div class="col d-flex" style="justify-content: center;background-color: rgb(138, 124, 112);">
+                  <h1 class="py-3 px-3">LOGIN</h1>
                 </div>
-            </div>
+              </div>
+              <div class="row">
+                <div class="col d-flex" style="justify-content: center;">
+                  <form class="row my-3 mx-3 justify-content-center" action="" method="post" style="font-weight: bold;">      
+                    <div class="row">
+                      <div class="form-group my-2">
+                        <label>Email : </label>
+                          <input class="form-control" placeholder="Votre email" type="email" id="mail" name="mail" value="" required>
+                      </div>
+                      <div class="form-group my-2">
+                        <label>Mot de passe : </label>
+                        <input class="form-control" placeholder="Votre mot de passe" type="password" id="mdp" name="mdp" value="" required>
+                      </div>
+                    </div>
+                    <div class="container-fluid d-flex" style="justify-content: center;">
+                      <div class="row">
+                        <div class="button ">
+                            <button class="my-3 mx-2 py-1 px-3" type="submit" id="envoyer" style="background-color: #ffef84; border-style: none; border-radius: 5px;"> Envoyer </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+              </div>
+          </div>
         </div>
-    </div>
+      <!-- CORPS DE LA PAGE -->
+      
       <!-- FIN CORPS DE LA PAGE -->
           
       <!-- FOOTER -->
-      <div class="footer" style="position:relative; bottom: 0;">
+      <div class="footer">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -119,7 +128,7 @@
 
       <!-- JavaScript -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootstrap/bootstrap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
