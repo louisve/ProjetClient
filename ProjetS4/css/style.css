@@ -89,3 +89,9 @@ body{
  .image-container:hover .images {
    opacity: 30%;
 }
+
+.mention{
+   text-decoration: none;
+   color:black;
+
+}
