@@ -67,7 +67,14 @@ else {
       res.status(500).send('Erreur lors de la connexion');
     }
   });
-  
+
+router.get('/checkIfLoggedIn', (req, res) => {
+  if (req.session.user) {
+    res.json(true);
+  } else {
+    res.json(false);
+  }
+});
 
 
 // export du module router
