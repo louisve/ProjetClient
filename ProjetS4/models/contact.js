@@ -24,22 +24,23 @@ const contactSchema = new mongoose.Schema({
         min: 10,
         max: 10
     },
-    option: {
+    // option: {
 
-        type: Number,
-        type: BigInt,
+    //     type: Number,
+    //     type: BigInt,
 
-        type: BigInt,
-        required: true,
-        min: 1,
-        max: 3
-    },
+    //     type: BigInt,
+    //     required: true,
+    //     min: 1,
+    //     max: 3
+    // },
     message: {
         type: String,
         required: true,
         min: 3,
         max: 255
     },
-});
+}
+);
 
 module.exports = mongoose.model('Contact', contactSchema);

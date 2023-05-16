@@ -3,6 +3,10 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
 const router = express.Router();
+const nodemailer = require('nodemailer');
+
+// Importer la fonction sendWelcomeEmail
+const sendWelcomeEmail = require('../public/js/email');
 
 router.use(express.json());
 router.use(express.urlencoded({ extended: true }));
@@ -26,6 +30,10 @@ router.post('/inscription', async (req, res) => {
     res.redirect('/'); // Rediriger l'utilisateur vers la page d'accueil
 
     console.log('Utilisateur créé');
+
+    // Envoi d'un email de bienvenue
+    await sendWelcomeEmail(email, prenom, nom);
+
   } catch (error) {
     console.log(error);
     res.status(500).send("Erreur lors de la création de l'utilisateur");
