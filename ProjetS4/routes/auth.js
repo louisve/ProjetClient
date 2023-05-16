@@ -27,7 +27,7 @@ router.post('/inscription', async (req, res) => {
     // Enregistrer l'utilisateur dans la base de données
     await user.save();
     
-    res.redirect('/'); // Rediriger l'utilisateur vers la page d'accueil
+    res.redirect('/index2.html'); // Rediriger l'utilisateur vers la page d'accueil
 
     console.log('Utilisateur créé');
 
@@ -58,7 +58,7 @@ else {
         return res.status(401).send('Email ou mot de passe incorrect');
       }
       
-      res.redirect('/'); // Redirect the user to the homepage
+      res.redirect('/index2.html'); // Redirect the user to the homepage
     }
   
       console.log('Utilisateur connecté');
