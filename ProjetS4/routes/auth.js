@@ -24,7 +24,7 @@ router.post('/inscription', async (req, res) => {
     await user.save();
     
     res.status(201).send(user);
-    res.redirect('/'); // Rediriger l'utilisateur vers la page d'accueil
+    //res.redirect('/'); // Rediriger l'utilisateur vers la page d'accueil
 
     console.log('Utilisateur créé');
   } catch (error) {
@@ -37,27 +37,27 @@ router.post('/inscription', async (req, res) => {
   
   // Connexion
 router.post('/login', async (req, res) => {
-    const { email, password } = req.body;
-    try {
-      const user = await User.findOne({ email });
-      if (!user) {
-        return res.status(401).send('Email ou mot de passe incorrect');
-      }
-      const isPasswordValid = await bcrypt.compare(password, user.password);
-      if (!isPasswordValid) {
-        return res.status(401).send('Email ou mot de passe incorrect');
-      }
-      const token = jwt.sign({ userId: user._id }, 'SECRET_KEY');
-      res.cookie('jwt', token, {
-        httpOnly: true,
-        maxAge: 24 * 60 * 60 * 1000, // 1 day
-      });
-      res.status(200).send('Vous êtes connecté');
-    } catch (error) {
-        console.log(error);
-        res.status(500).send('Erreur lors de la connexion');
+  const { email, password } = req.body;
+  try {
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(401).send('Email ou mot de passe incorrect');
     }
+    if (password !== user.password) {
+      return res.status(401).send('Email ou mot de passe incorrect');
+    }
+    const token = jwt.sign({ userId: user._id }, 'SECRET_KEY');
+    res.cookie('jwt', token, {
+      httpOnly: true,
+      maxAge: 24 * 60 * 60 * 1000, // 1 day
+    });
+    res.status(200).send('Vous êtes connecté');
+  } catch (error) {
+    console.log(error);
+    res.status(500).send('Erreur lors de la connexion');
+  }
 });
+
 
 // export du module router
 module.exports = router;
