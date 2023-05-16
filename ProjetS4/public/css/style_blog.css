@@ -1,0 +1,39 @@
+@media (min-width: 485) {
+    
+    img {
+        height: 200px;
+        width: auto;
+    }
+
+}
+
+/* img {
+    height: 350px; 
+    width: auto;
+}
+
+p {
+    padding: 20px;
+    margin: 20px;
+} */
+
+@media (max-width: 767px) {
+    .blog-row {
+      flex-direction: column;
+    }
+  
+    .blog-row .col {
+      margin: 10px 0;
+    }
+  
+    .blog-row .col:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .blog-text {
+    text-align: center;
+    justify-content:center ;
+  }
+  
+  

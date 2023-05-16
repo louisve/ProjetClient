@@ -10,32 +10,32 @@
       <link rel="icon" href="../images/LOGO ACADEMY FENG SHUI.png" type="image/png">
         <!-- CSS -->
         <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-        <link href="../fontawesome/css/all.css" rel="stylesheet">
+        <link href="../css/fontawesome/css/all.css" rel="stylesheet">
         <link href="../css/style.css" rel="stylesheet"/>
     </head>
     <body>
 
-      <!-- NAVBAR -->
+      <!-- NAVBAR-->
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <!-- LOGO -->
           <div class="col-auto">
-            <a class="navbar-brand" href="../index.html">
-              <img src="../images/LOGO ACADEMY FENG SHUI.png" class="img-fluid" alt="Responsive image" style="height: 75px; width: 125px;">
-            </a>
+              <a class="navbar-brand" href="../index.html">
+                  <img src="../images/LOGO ACADEMY FENG SHUI.png" class="img-fluid" alt="Responsive image" style="height: 75px; width: 125px;">
+              </a>
           </div>
           <!-- FIN LOGO -->
-          
+
           <!-- ONGLETS -->
           <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
+              <i class="fas fa-bars"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <div class="col" >
-                <ul id="bloc1" class="navbar-nav ms-0 mb-2 mb-lg-0"">
+            <div class="navbar-nav" style="width: 100%; color:black;">
+              <div class="col">
+                <ul id="bloc1" class="navbar-nav ms-0 mb-2 mb-lg-0">
                   <li class="nav-item mg-2">
-                    <a class="nav-link" href="fengShui.html"><i class="fa-solid fa-yin-yang"></i>  Feng Shui Traditionnel</a>
+                    <a class="nav-link" href="fengShui.html" ><i class="fa-solid fa-yin-yang"></i>  Feng Shui Traditionnel</a>
                   </li>
                   <li class="nav-item px-3">
                     <a class="nav-link" href="analyse.html"><i class="fa-solid fa-house-chimney"></i>  Analyse</a>
@@ -50,13 +50,12 @@
                     <a class="nav-link" href="boutique.html"><i class="fa-solid fa-cart-shopping"></i>  Boutique</a>
                   </li>
                   <li class="nav-item px-3">
-                    <a class="nav-link" href="contact.html">
-                        <i class="fa-solid fa-envelope""></i> Contact</a>
+                    <a class="nav-link" href="contact.html" ><i class="fa-solid fa-envelope"></i> Contact</a>
                   </li>
                 </ul>
               </div>
-                  
-              <ul class="navbar-nav pull-right mb-2 mb-lg-0">
+
+              <ul class="navbar-nav" style="margin-right: 0;">
                 <li class="nav-item px-3">
                   <a class="nav-link" href="login.html" style="color:  #DBAE00;"><i class="fa-solid fa-user"></i>  Login</a>
                 </li>
@@ -66,7 +65,7 @@
           </div>
         </div>
       </nav>
-      <!-- FIN NAVBAR -->
+      <!-- FIN NAVBAR-->
       
         <div class="container-fluid px-5 py-5">
           <div class="container" style="border-style: solid; border-radius: 10px;background-color: white; border-color:rgb(138, 124, 112); width: 50%;">
@@ -78,29 +77,26 @@
               <div class="row">
                 <div class="col d-flex" style="justify-content: center;">
                     <form action="/auth/inscription" method="post">
-                        <div class="form-group">
+                        <div class="form-group px-2 py-2">
                           <label for="prenom">Prénom :</label>
                           <input type="text" class="form-control" id="firstname" name="prenom" required>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group px-2 py-2">
                           <label for="nom">Nom :</label>
                           <input type="text" class="form-control" id="lastname" name="nom" required>
-                          <label for="firstname">Prénom :</label>
-                          <input type="text" class="form-control" id="firstname" name="firstname" required>
                         </div>
-                        <div class="form-group">
-                          <label for="lastname">Nom :</label>
-                          <input type="text" class="form-control" id="lastname" name="lastname" required>
-                        </div>
-                        <div class="form-group">
+                        <div class="form-group px-2 py-2">
                           <label for="email">Adresse e-mail :</label>
                           <input type="email" class="form-control" id="email" name="email" required>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group px-2 py-2">
                           <label for="password">Mot de passe :</label>
                           <input type="password" class="form-control" id="password" name="password" required>
                         </div>
-                        <button type="submit" class="btn btn-primary">S'inscrire</button>
+                        <div class="px-2 py-2">
+                          <button type="submit" class="btn btn-primary">S'inscrire</button>
+                        </div>
+                        
                       </form>
                       
                 </div>
