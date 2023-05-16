@@ -1,0 +1,10 @@
+.image-feng {
+    border-radius: 10px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .image-proportionnelles img {
+    max-width: 100%;
+    height: auto;
+  }
