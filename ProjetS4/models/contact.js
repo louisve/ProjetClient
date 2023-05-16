@@ -26,7 +26,11 @@ const contactSchema = new mongoose.Schema({
     },
     option: {
 <<<<<<< HEAD
+<<<<<<< HEAD
         type: Number,
+=======
+        type: BigInt,
+>>>>>>> ce24be535d3b64b20637f8df7b18bf74aa4b00b3
 =======
         type: BigInt,
 >>>>>>> ce24be535d3b64b20637f8df7b18bf74aa4b00b3
