@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
-    nom: {
+    prenom: {
         type: String,
         required: true,
         min: 3,
         max: 255
     },
-    prenom: {
+    nom: {
         type: String,
         required: true,
         min: 3,

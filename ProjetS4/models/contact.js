@@ -25,7 +25,7 @@ const contactSchema = new mongoose.Schema({
         max: 10
     },
     option: {
-        type: int,
+        type: Number,
         required: true,
         min: 1,
         max: 3
