@@ -36,7 +36,7 @@ async function sendWelcomeEmail(email, prenom, nom) {
 async function sendContactEmail(email, prenom, nom,telephone, message) {
     const mailOptions = {
         from: transporter.options.auth.user,
-        to: 'clement.vincent@isen.yncrea.fr',
+        to: 'loic.missigbeto@isen.yncrea.fr',
         subject: 'Demande de contact',
         text:'Bonjour, vous avez reçu une demande de contact de la part de ' + prenom + ' ' + nom + telephone + ' (' + email + ').' + message  + 'Merci de le recontacter au plus vite.',
     };

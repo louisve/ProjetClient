@@ -21,7 +21,7 @@ router.post('/inscription', async (req, res) => {
       prenom,
       nom,
       email,
-      password, // Enregistrer le mot de passe sans le hacher
+      password, // pas encore hasher
     });
 
     // Enregistrer l'utilisateur dans la base de données

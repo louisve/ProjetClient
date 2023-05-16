@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const Contact = require('../models/contact');
 const router = express.Router();
 router.use(express.urlencoded({ extended: true }));
+const nodemailer = require('nodemailer');
+const Email = require('../public/js/email');// 
 
 // Route pour ajouter un contact
 router.post('/contacter', async (req, res) => {
@@ -22,9 +24,9 @@ router.post('/contacter', async (req, res) => {
              message,
          });
         await contact.save();
-        res.redirect('/');
         // Envoi de l'emai à l'administrateur
         await sendContactEmail(email, prenom, nom, telephone, message);
+        res.redirect('/');
 
     } catch (error) {
         console.log(error);
