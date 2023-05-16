@@ -36,7 +36,7 @@ async function sendWelcomeEmail(email, prenom, nom) {
 async function sendContactEmail(email, prenom, nom,telephone, message) {
     const mailOptions = {
         from: transporter.options.auth.user,
-        to: 'academyfengshui@gmail.com',
+        to: 'louis.vernanchet@isen.yncrea.fr',
         subject: 'Demande de contact',
         text:'Bonjour, vous avez reçu une demande de contact de la part de ' + prenom + ' ' + nom + telephone + ' (' + email + ').' + message  + 'Merci de le recontacter au plus vite.',
     };
